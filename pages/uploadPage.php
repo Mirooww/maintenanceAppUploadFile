@@ -3,17 +3,17 @@
    <head>
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Pokemon Go</title>
+      <title>Page d'upload</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" type="text/css" media="screen" href="../style/bootperso.css" />
-      <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="../assets/style/bootperso.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="../assets/style/style.css" />
    </head>
    <body>
       <main class="centered">
          <div class="row col-12 col-sm-10 col-md-6 col-lg-3 centered">
             <div class="box">
                <?php
-                  include '../componentPage/header.php';
+                  include 'layout/header.php';
                ?>
                <div class="centeredBis">
                   <form action="php/uploadSystem.php" method="post" enctype="multipart/form-data">
