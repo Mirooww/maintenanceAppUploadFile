@@ -10,16 +10,17 @@
    </head>
    <body>
       <main class="centered">
-         <div class="row col-12 col-sm-10 col-md-6 col-lg-3 centered">
+         <div class="row col-12 col-sm-9 col-md-6 col-lg-3 centered">
             <div class="box">
-               <h1>Epsilon</h1>
-               <p>Plateforme de peer-learning</p>
-               <p>Epsi Lille</p>
-               <form action="php/pitie.php" method="post" enctype="multipart/form-data">
-                  Select image to upload:
-                  <input type="file" name="fileToUpload" id="fileToUpload" />
-                  <input type="submit" value="Upload Image" name="submit" />
-               </form>
+               <?php
+               include 'componentPage/header.php';
+               ?>
+               <div class="centered">
+                  <img src="../image/joyca.webp" alt="Joyca" />
+               </div>
+               <p>Jordan Rondelli</p>
+
+               <p><a href="pages/uploadPage.php">Upload your file !</a></p>
             </div>
          </div>
       </main>
