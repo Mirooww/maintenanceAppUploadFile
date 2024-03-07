@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -16,8 +20,19 @@
          <div class="box">
             <?php
                include '../../componentPage/header.php';
-                echo "Le fichier " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " a été téléchargé.";
+
             ?>
+            <div class="centeredBis">
+            <?php
+               if(isset($_SESSION['message'])){
+                  echo $_SESSION['message'];
+                  unset($_SESSION['message']); // supprimez le message après l'avoir affiché
+               }
+            ?>
+            </div>
+
+            <p><a href="../../index.php">Retour</a></p>
+
          </div>
       </div>
    </main>

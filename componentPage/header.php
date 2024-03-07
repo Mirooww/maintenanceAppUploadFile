@@ -1,8 +1,4 @@
 
-<?php
-    echo "<header>";
-    echo "<h1>NEXUM</h1>";
-    echo "<p>Plateforme de peer-learning</p>";
-    echo "<p>Epsi Lille</p>";
-    echo "</header>";
-?>
+<h1 style="color: red">NEXUM</h1>
+<p style="color: red">Plateforme de peer-learning</p>
+<p style="color: red">Epsi Lille</p>

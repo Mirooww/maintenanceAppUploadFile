@@ -15,11 +15,16 @@
                <?php
                   include '../componentPage/header.php';
                ?>
-               <form action="php/pitie.php" method="post" enctype="multipart/form-data">
-                  Select image to upload:
-                  <input type="file" name="fileToUpload" id="fileToUpload" />
-                  <input type="submit" value="Upload Image" name="submit" />
-               </form>
+               <div class="centeredBis">
+                  <form action="php/uploadSystem.php" method="post" enctype="multipart/form-data">
+                     <p>Select image to upload:</p>
+                     <input type="file" name="fileToUpload" id="fileToUpload" />
+                     <input type="submit" value="Upload Image" name="submit" />
+                  </form>
+               </div>
+               <p><a href="../index.php">Retour</a></p>
+                   
+               
             </div>
          </div>
       </main>
